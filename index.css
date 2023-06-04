@@ -1,0 +1,195 @@
+:root {
+    --primary: #61892F;
+    --neon: #86C232;
+    --dark: #222629;
+    --grey: #474B4F;
+    --light: #6B6E70;
+}
+
+.flex {
+    display: flex;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 0.8rem 3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+
+.btn-primary {
+    background: var(--primary);
+
+
+}
+
+.btn-primary {
+    background: transparent;
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+
+
+body {
+    font-family: sans-serif;
+    background-color: var(--dark);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    --webkit-font-smotthing: antialiased;
+
+}
+
+
+.C {
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+header nav .left a {
+    color: white;
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all .3s ease;
+
+}
+
+header nav .left a:hover {
+    color: var(--primary);
+}
+
+header nav {
+    padding: 2rem 0;
+}
+
+header nav .logo {
+    margin-right: 3rem;
+
+}
+
+.man {
+    padding: 3rem 0;
+}
+
+.man img {
+    width: 400px;
+}
+
+.right {
+    color: rgb(235, 238, 240);
+    padding-left: 50px;
+}
+
+.right h6 {
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+    animation-name: sure;
+    animation-duration: 1s;
+    position: relative;
+
+
+}
+
+.right h1 {
+    font-size: 4rem;
+    font-weight: 100;
+    margin-bottom: 2rem;
+    animation-name: here;
+    animation-duration: 1s;
+    position: relative;
+}
+
+
+
+.right h1 span {
+    color: #61892F;
+}
+
+.right {
+    margin-top: -4rem;
+}
+
+@keyframes sure {
+    from {
+        bottom: 6cm;
+        font-size: 1.6rem;
+    }
+
+    to {
+        bottom: 0cm;
+        font-size: 1.6rem;
+    }
+}
+
+@keyframes here {
+    from {
+        left: 21cm;
+        font-size: 4rem;
+    }
+
+    to {
+        left: 0cm;
+        font-size: 4rem;
+    }
+}
+
+label {
+    display: none;
+}
+
+.img {
+    position: relative;
+    left: 21cm;
+}
+
+input {
+    display: none;
+}
+
+input:checked~.part {
+    left: 16cm;
+    bottom: -3cm;
+}
+
+label {
+    display: block;
+}
+
+.ham {
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    /*screen upto 600px (mobile)*/
+
+}
+
+@media only screen and (min-width:601px) and (max-width: 1300px) {
+    /*screen between 601px to 1300px (tablet)*/
+
+}
+
+@media only screen and (max-width: 1301px) and (max-width: 1800px) {
+    /*screen upto 1301px to 1800px (tablet-desktop)*/
+
+}
