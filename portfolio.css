@@ -1,3 +1,4 @@
+/* Colors used while developing website */
 :root {
     --primary: #61892F;
     --neon: #86C232;
@@ -6,6 +7,7 @@
     --light: #6B6E70;
 }
 
+/* This css is used to style navagation bar  */
 .flex {
     display: flex;
 }
@@ -89,7 +91,7 @@ header nav .logo {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-
+/* used to style gallery section */
 .photos-section {
     width: 100%;
 
@@ -157,30 +159,24 @@ header nav .logo {
 }
 
 .photos-section {
-    animation-name: sure;
-    animation-duration: 1s;
-    margin-bottom: 2rem;
     position: relative;
-
-
+    animation: slide-up 1s ease-in-out;
 }
 
-@keyframes sure {
-    from {
-        bottom: 6cm;
-        font-size: 1.6rem;
+/* Animation */
+@keyframes slide-up {
+    0% {
+        transform: translateY(100%);
     }
 
-    to {
-        bottom: 0cm;
-        font-size: 1.6rem;
+    100% {
+        transform: translateY(0);
     }
 }
 
 
 
-
-
+/* Responsive */
 
 @media screen and (max-width:992px) {
     .photos-section .photos-wrap .photos-images {
