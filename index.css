@@ -1,3 +1,4 @@
+/* Colors used while developing website */
 :root {
     --primary: #61892F;
     --neon: #86C232;
@@ -6,6 +7,7 @@
     --light: #6B6E70;
 }
 
+/* This css is used to style navagation bar  */
 .flex {
     display: flex;
 }
@@ -127,6 +129,7 @@ header nav .logo {
     margin-top: -4rem;
 }
 
+/* Animation  */
 @keyframes sure {
     from {
         bottom: 6cm;
@@ -151,33 +154,7 @@ header nav .logo {
     }
 }
 
-label {
-    display: none;
-}
-
-.img {
-    position: relative;
-    left: 21cm;
-}
-
-input {
-    display: none;
-}
-
-input:checked~.part {
-    left: 16cm;
-    bottom: -3cm;
-}
-
-label {
-    display: block;
-}
-
-.ham {
-    display: none;
-}
-
-
+/* Responsive  */
 
 @media only screen and (max-width: 600px) {
     /*screen upto 600px (mobile)*/
