@@ -156,6 +156,32 @@ header nav .logo {
     font-size: 13px;
 }
 
+.photos-section {
+    animation-name: sure;
+    animation-duration: 1s;
+    margin-bottom: 2rem;
+    position: relative;
+
+
+}
+
+@keyframes sure {
+    from {
+        bottom: 6cm;
+        font-size: 1.6rem;
+    }
+
+    to {
+        bottom: 0cm;
+        font-size: 1.6rem;
+    }
+}
+
+
+
+
+
+
 @media screen and (max-width:992px) {
     .photos-section .photos-wrap .photos-images {
         grid-template-columns: repeat (2, 1fr);
