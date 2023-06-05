@@ -1,0 +1,144 @@
+/* Colors used while developing website */
+:root {
+    --primary: #61892F;
+    --neon: #86C232;
+    --dark: #222629;
+    --grey: #474B4F;
+    --light: #6B6E70;
+}
+
+/* This css is used to style navagation bar  */
+.flex {
+    display: flex;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 0.8rem 3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+
+.btn-primary {
+    background: var(--primary);
+
+
+}
+
+.btn-primary {
+    background: transparent;
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+
+
+body {
+    font-family: sans-serif;
+    background-color: var(--dark);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    --webkit-font-smotthing: antialiased;
+
+}
+
+
+.C {
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+header nav .left a {
+    color: white;
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all .3s ease;
+
+}
+
+header nav .left a:hover {
+    color: var(--primary);
+}
+
+header nav {
+    padding: 2rem 0;
+}
+
+header nav .logo {
+    margin-right: 3rem;
+
+}
+
+/* color for h2 tag  */
+h2 {
+    color: #369dc3;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+
+
+}
+
+/* font size for p tag */
+p {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 5%;
+
+
+}
+
+/* container used to make column */
+.container {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.column {
+    margin: 0 15px 25px;
+    flex-basis: 33%;
+
+
+}
+
+
+.card {
+    padding: 15px 25px;
+    color: #fff;
+
+}
+
+
+
+
+/* Responsive */
+@media screen and (max-width:992px) {
+    .container {
+        flex-direction: column;
+    }
+
+    @media screen and (max-width: 568px) {
+        .column {
+            width: 100%;
+        }
+    }
+}
