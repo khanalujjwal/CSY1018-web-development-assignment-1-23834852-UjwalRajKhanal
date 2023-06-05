@@ -1,3 +1,4 @@
+/* Colors used while developing website */
 :root {
     --primary: #61892F;
     --neon: #86C232;
@@ -6,6 +7,7 @@
     --light: #6B6E70;
 }
 
+/* This css is used to style navagation bar  */
 .flex {
     display: flex;
 }
@@ -88,6 +90,7 @@ header nav .logo {
 
 }
 
+/* used to design contact page */
 .container {
     width: 90%;
     margin: auto;
