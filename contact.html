@@ -5,16 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Contact Page</title>
     <link rel="stylesheet" href="./contact.css">
     <!-- Add font awesome CDN-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
 <body>
-    <!-- This div is for top navagation bar -->
     <header>
+        <!-- This div is for top navagation bar -->
         <div class="C">
             <nav id="imp-nav" class="flex items-center justify-between">
                 <div class="left flex items-center">
@@ -22,17 +22,51 @@
                         <img src="./images/kingfisher.png" alt="kingfisher" width="50" height="50">
                     </div>
 
-                    <div class="part">
-                        <a href="index.html">Home</a>
-                        <a href="portfolio.html">Portfolio</a>
-                        <a href="workexperience.html">Work Experience</a>
-                        <a href="sitereport.html">Site Report</a>
-                        <a href="contact.html">Contact</a>
-                    </div>
+
+
+                    <input type="checkbox" id="menu-toggle" class="hidden">
+                    <label for="menu-toggle" class="hamburger">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </label>
+
+                    <nav class="menu">
+                        <ul class="menu-list">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li class="has-submenu">
+                                <a href="workexperience.html">Work Experience</a>
+
+                            <li><a href="sitereport.html">Site Report </a></li>
+
+                            <li><a href="contact.html">Contact </a></li>
+                        </ul>
+                    </nav>
+                    <header class="top-nav">
+                        <div class="part">
+                            <ul class="top-nav-links">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="portfolio.html">Portfolio</a></li>
+                                <li><a href="workexperience.html">Work Experience</a></li>
+                                <li><a href="sitereport.html">Site Report</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+
+
+                    </header>
+
                 </div>
+
+
+
             </nav>
+
         </div>
+
     </header>
+
     <!-- contact section -->
     <section id="contact-section">
         <div class="container">
