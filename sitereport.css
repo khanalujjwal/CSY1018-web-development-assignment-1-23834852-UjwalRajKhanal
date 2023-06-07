@@ -1,0 +1,269 @@
+/* Colors used while developing website */
+:root {
+    --primary: #61892F;
+    --neon: #86C232;
+    --dark: #222629;
+    --grey: #474B4F;
+    --light: #6B6E70;
+}
+
+/* This css is used to style navagation bar  */
+.flex {
+    display: flex;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 0.8rem 3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+
+.btn-primary {
+    background: var(--primary);
+
+
+}
+
+.btn-primary {
+    background: transparent;
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+
+
+body {
+    font-family: sans-serif;
+    background-color: var(--dark);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    --webkit-font-smotthing: antialiased;
+
+}
+
+
+.C {
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+header nav .left a {
+    color: white;
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all .3s ease;
+
+}
+
+header nav .left a:hover {
+    color: var(--primary);
+}
+
+header nav {
+    padding: 2rem 0;
+}
+
+header nav .logo {
+    margin-right: 3rem;
+
+}
+
+
+
+
+
+
+
+.site {
+    display: grid;
+    padding: 25px 0;
+    height: fit-content;
+    margin: 5%;
+
+}
+
+.site-item {
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    overflow: hidden;
+    cursor: pointer;
+    width: 1100px;
+    height: fit-content;
+}
+
+.card-content {
+    padding: 25px;
+}
+
+.card-header-caption {
+    font-size: 35px;
+    font-weight: 500;
+    color: rgb(86, 81, 246);
+    margin-bottom: 8px;
+}
+
+.card-caption {
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 26px;
+    color: cornflowerblue;
+}
+
+
+
+
+
+/* Basic layout styles */
+.hidden {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 9999;
+}
+
+.hamburger .line {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin-bottom: 5px;
+}
+
+.menu {
+    display: none;
+    background-color: #61892F;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.menu.open {
+    display: block;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu li {
+    margin: 10px 0;
+}
+
+
+.has-submenu:focus .submenu {
+    display: block;
+}
+
+.top-nav {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+
+}
+
+.top-nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.top-nav li {
+    margin-right: 10px;
+}
+
+.top-nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Media query for mobile phones */
+@media (max-width: 860px) {
+    .hamburger {
+        display: block;
+    }
+
+    .top-nav {
+        display: none;
+    }
+
+    #menu-toggle:checked~.hamburger .line:nth-child(1),
+    #menu-toggle:checked~.hamburger .line:nth-child(3) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    #menu-toggle:checked~.hamburger .line:nth-child(2) {
+        opacity: 0;
+    }
+
+    #menu-toggle:checked~.menu {
+        display: block;
+    }
+}
+
+
+
+
+
+/* Styles for small screens */
+@media screen and (max-width: 767px) {
+
+    .card-co-1,
+    .card-co-2,
+    .card-co-3 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card-co-1 img,
+    .card-co-2 img,
+    .card-co-3 img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+}
+
+/* Styles for medium and larger screens */
+@media screen and (min-width: 768px) {
+
+    .card-co-1,
+    .card-co-2,
+    .card-co-3 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+    }
+
+    .card-co-1 img,
+    .card-co-2 img,
+    .card-co-3 img {
+        width: 100%;
+        height: auto;
+    }
+}
