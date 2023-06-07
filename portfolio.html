@@ -2,41 +2,85 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
-    <link rel="stylesheet" href="./portfolio.css" />
+    <link rel="stylesheet" href="./portfolio.css">
 </head>
 
 <body>
+    <!-- This div is for top navagation bar -->
     <header>
         <!-- This div is for top navagation bar -->
         <div class="C">
             <nav id="imp-nav" class="flex items-center justify-between">
                 <div class="left flex items-center">
                     <div class="logo">
-                        <img src="./images/kingfisher.png" alt="kingfisher" width="50" height="50" />
+                        <img src="./images/kingfisher.png" alt="kingfisher" width="50" height="50">
                     </div>
 
-                    <div class="part">
-                        <a href="index.html">Home</a>
-                        <a href="portfolio.html">Portfolio</a>
-                        <a href="workexperience.html">Work Experience</a>
-                        <a href="sitereport.html">Site Report</a>
-                        <a href="contact.html">Contact</a>
-                    </div>
+
+
+                    <input type="checkbox" id="menu-toggle" class="hidden">
+                    <label for="menu-toggle" class="hamburger">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </label>
+
+                    <nav class="menu">
+                        <ul class="menu-list">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li class="has-submenu">
+                                <a href="workexperience.html">Work Experience</a>
+
+                            <li><a href="sitereport.html">Site Report </a></li>
+
+                            <li><a href="contact.html">Contact </a></li>
+                        </ul>
+                    </nav>
+                    <header class="top-nav">
+                        <div class="part">
+                            <ul class="top-nav-links">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="portfolio.html">Portfolio</a></li>
+                                <li><a href="workexperience.html">Work Experience</a></li>
+                                <li><a href="sitereport.html">Site Report</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+
+
+                    </header>
+
                 </div>
+
+
+
             </nav>
+
         </div>
+
     </header>
+
+
+
+
+
+
+
+
+
+
     <!-- This div is for gallery section and added six images -->
     <div class="photos-section">
         <div class="photos-wrap">
             <div class="photos-images">
                 <div class="photos">
                     <div class="image-section">
-                        <img src="./images/benz.jpg" alt="">
+                        <img src="./images/benz.jpg" alt="benz">
                     </div>
                     <div class="caption">
                         <h3>Aaron Huber</h3>
@@ -47,7 +91,7 @@
                 </div>
                 <div class="photos">
                     <div class="image-section">
-                        <img src="./images/2 cars.jpg" alt="">
+                        <img src="./images/2cars.jpg" alt="car">
                     </div>
                     <div class="caption">
                         <h3>Katka Pavlickova</h3>
@@ -58,7 +102,7 @@
                 </div>
                 <div class="photos">
                     <div class="image-section">
-                        <img src="./images/3 cars.jpg" alt="">
+                        <img src="./images/3cars.jpg" alt="car">
                     </div>
                     <div class="caption">
                         <h3>Valdemaras Januška</h3>
@@ -69,7 +113,7 @@
                 </div>
                 <div class="photos">
                     <div class="image-section">
-                        <img src="./images/blue.jpg" alt="">
+                        <img src="./images/blue.jpg" alt="car">
                     </div>
                     <div class="caption">
                         <h3>Tyler Clemmensen</h3>
@@ -79,7 +123,7 @@
                 </div>
                 <div class="photos">
                     <div class="image-section">
-                        <img src="./images/red.jpg" alt="">
+                        <img src="./images/red.jpg" alt="car">
                     </div>
                     <div class="caption">
                         <h3>Dillon Kydd</h3>
@@ -89,7 +133,7 @@
                 </div>
                 <div class="photos">
                     <div class="image-section">
-                        <img src="./images/white.jpg" alt="">
+                        <img src="./images/white.jpg" alt="car">
                     </div>
                     <div class="caption">
                         <h3>Olav Tvedt</h3>
