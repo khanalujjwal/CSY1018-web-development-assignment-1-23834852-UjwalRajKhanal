@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <!-- This div is for top navagation bar -->
     <header>
         <!-- This div is for top navagation bar -->
         <div class="C">
@@ -19,33 +20,77 @@
                         <img src="./images/kingfisher.png" alt="kingfisher" width="50" height="50">
                     </div>
 
-                    <div class="part">
-                        <a href="index.html">Home</a>
-                        <a href="portfolio.html">Portfolio</a>
-                        <a href="workexperience.html">Work Experience</a>
-                        <a href="sitereport.html">Site Report</a>
-                        <a href="contact.html">Contact</a>
-                    </div>
+
+
+                    <input type="checkbox" id="menu-toggle" class="hidden">
+                    <label for="menu-toggle" class="hamburger">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </label>
+
+                    <nav class="menu">
+                        <ul class="menu-list">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li class="has-submenu">
+                                <a href="workexperience.html">Work Experience</a>
+
+                            <li><a href="sitereport.html">Site Report </a></li>
+
+                            <li><a href="contact.html">Contact </a></li>
+                        </ul>
+                    </nav>
+                    <header class="top-nav">
+                        <div class="part">
+                            <ul class="top-nav-links">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="portfolio.html">Portfolio</a></li>
+                                <li><a href="workexperience.html">Work Experience</a></li>
+                                <li><a href="sitereport.html">Site Report</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+
+
+                    </header>
+
                 </div>
+
+
+
             </nav>
-            <!-- This div included image and introduction -->
-            <div class="man flex items-center justify-between">
-                <div class=" flex-1 ">
-                    <img src="./images/nagarkot2.png" alt="pic man">
-                </div>
-                <div class="right flex-1">
-                    <h6>Student of</h6>
-                    <h1>The University Of <span>NORTHAMPTON</span></h1>
-                    <p> Hello! Welcome to the home page of my portfolio website. My name is Ujwal Raj Khanal, and I'm
-                        excited to share my work with you.This website serves as a showcase of my work, and I hope it
-                        gives you a sense of my skills and capabilities.I invite you to explore my portfolio and get in
-                        touch if you have any questions or would like to discuss a potential project.</p>
-                </div>
-            </div>
+
         </div>
 
-
     </header>
+
+    <!-- This div included image and introduction -->
+    <div class="man flex items-center justify-between">
+        <div class=" flex-1 ">
+            <img src="./images/nagarkot2.png" alt="pic man">
+        </div>
+        <div class="right flex-1">
+            <h6>Student of</h6>
+            <h1>The University Of <span>NORTHAMPTON</span></h1>
+            <p> Hello! Welcome to the home page of my portfolio website. My name is Ujwal Raj Khanal, and
+                I'm
+                excited to share my work with you.This website serves as a showcase of my work, and I hope
+                it
+                gives you a sense of my skills and capabilities.I invite you to explore my portfolio and get
+                in
+                touch if you have any questions or would like to discuss a potential project.</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
 
 
 </body>
